@@ -63,6 +63,7 @@ class _LoginPageState extends State<LoginPage> {
                   Container(
                     padding: const EdgeInsets.only(left: 20, right: 20),
                     child: TextFormField(
+                      key: const Key('emailField'), // Tambahkan key untuk mendapatkan akses
                       decoration: const InputDecoration(
                         border: OutlineInputBorder(),
                         hintText: 'Masukan Email',
@@ -90,6 +91,7 @@ class _LoginPageState extends State<LoginPage> {
                   Container(
                     padding: const EdgeInsets.only(left: 20, right: 20),
                     child: TextFormField(
+                      key: const Key('passwordField'), // Tambahkan key untuk mendapatkan akses
                       obscureText: !visiblePassword,
                       keyboardType: TextInputType.visiblePassword,
                       decoration: InputDecoration(
@@ -122,6 +124,7 @@ class _LoginPageState extends State<LoginPage> {
                   Container(
                     padding: const EdgeInsets.only(top: 50),
                     child: ElevatedButton(
+                    
                       onPressed: () async {
                         if (_formKey.currentState!.validate()) {
                           UserModel? registeredUser = await authcontroller

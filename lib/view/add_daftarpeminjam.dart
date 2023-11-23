@@ -196,6 +196,7 @@ class _AddPeminjamState extends State<AddPeminjam> {
                     padding: const EdgeInsets.only(left: 10),
                     margin: const EdgeInsets.only(right: 20),
                     child: TextFormField(
+                       key: Key('tglpinjam'),
                       controller: datememinjam,
                       decoration: const InputDecoration(
                           hintText: "Pilih Tanggal Meminjam",
@@ -237,6 +238,7 @@ class _AddPeminjamState extends State<AddPeminjam> {
                     padding: const EdgeInsets.only(left: 10),
                     margin: const EdgeInsets.only(right: 20),
                     child: TextFormField(
+                       key: Key('tglkembali'),
                       controller: datepengembalian,
                       decoration: const InputDecoration(
                           hintText: "Pilih Tanggal Pemngembalian",

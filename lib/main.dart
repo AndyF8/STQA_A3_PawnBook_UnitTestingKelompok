@@ -2,12 +2,15 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:pawn_book/view/add_daftarbuku.dart';
 import 'package:pawn_book/view/add_daftarpeminjam.dart';
+import 'package:pawn_book/view/daftarbuku.dart';
+import 'package:pawn_book/view/dailyreport.dart';
 import 'package:pawn_book/view/detail_daftarbuku.dart';
 import 'package:pawn_book/view/detail_daftarpeminjam.dart';
 import 'package:pawn_book/view/edit_daftarbuku.dart';
 import 'package:pawn_book/view/edit_daftarpeminjam.dart';
 import 'package:pawn_book/view/homepage.dart';
 import 'package:pawn_book/view/loginpage.dart';
+import 'package:pawn_book/view/registerpage.dart';
 import 'package:pawn_book/view/splash.dart';
 
 Future main() async {
